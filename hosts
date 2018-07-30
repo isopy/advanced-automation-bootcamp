@@ -1,5 +1,5 @@
 [all:vars]
-GUID=c16d
+guid=1baa
 
 [internal:vars]
 
@@ -17,14 +17,14 @@ appdbs
 
 [frontends]
 ## These are the frontends
-frontend1 ansible_host=frontend1."{{ GUID }}".internal
+frontend1 ansible_host=frontend1."{{ guid }}".internal
 
 [apps]
 ## These are the apps
-app1 ansible_host=app1."{{ GUID }}".internal
-app2 ansible_host=app2."{{ GUID }}".internal
+app1 ansible_host=app1."{{ guid }}".internal
+app2 ansible_host=app2."{{ guid }}".internal
 
 [appdbs]
 ## These are the appdbi(s)
-appdb1 ansible_host=appdb1."{{ GUID }}".internal
+appdb1 ansible_host=appdb1."{{ guid }}".internal
 
