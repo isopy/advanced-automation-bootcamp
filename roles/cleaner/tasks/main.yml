@@ -19,6 +19,7 @@
     state: absent
   with_items:
     - httpie
+    - httpd
     - python-pip
     - haproxy
     - tomcat
@@ -33,3 +34,8 @@
   file:
     state: absent
     path: /tmp/index.html
+
+- name: Remove pgsql data dir
+  file:
+    state: absent
+    path: /var/lib/pgsql/data
