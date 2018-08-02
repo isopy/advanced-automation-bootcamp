@@ -1,3 +1,2 @@
 ---
 tomcat_doc_root: /usr/share/tomcat/webapps/ROOT
-tomcat_frontend_url: http://frontend1.1baa.example.opentlc.com
